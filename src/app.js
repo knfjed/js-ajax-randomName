@@ -7,10 +7,10 @@ fetch("https://uinames.com/api/?region=japan")
 // addをクリックされたら以下を実行
 // ul要素を取得
 // li要素を作成して、テキストを追加
-document.getElementById("add").addEventListener("click", e => {
+document.getElementById("add").addEventListener("click", event => {
+  event.preventDefault();
   const ul = document.querySelector("ul");
   const li = document.createElement("li");
-  li.textContent.innerHTML = json();
   ul.appendChild(li);
-  event.preventDefault();
+  li.write(json);
 });
