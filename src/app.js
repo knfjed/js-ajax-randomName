@@ -12,5 +12,5 @@ document.getElementById("add").addEventListener("click", event => {
   const ul = document.querySelector("ul");
   const li = document.createElement("li");
   ul.appendChild(li);
-  li.write(json);
+  li.textContent = "hello";
 });
